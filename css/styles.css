@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --button: #517aa1;
+    --buttonFont: white;
+    --formBorder: lightgrey;
+    --font: "Google Sans";
+    --resultsColor: #f8f8f8;
+}
+
+button {
+    background-color: var(--button);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: var(--buttonFont);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+body {
+    font-family: var(--font);
+}
+
+form {
+    margin: 2rem;
+    padding: 2rem;
+    border: 2px solid var(--formBorder);
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+select {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+.results {
+    background-color: var(--resultsColor);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.results:empty {
+    display: none;
+}
